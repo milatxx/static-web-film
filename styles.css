@@ -34,3 +34,20 @@ header nav ul li a {
   color: white;
     text-decoration: none;
 }
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+  position: relative;
+}
+
+.intro-overlay {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: white;
+
+}
