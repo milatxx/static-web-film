@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="/backend/styles.css">
 </head>
 <body>
+    
     <header>
         <h1>Admin Panel</h1>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="film-overview.html">Film Overview</a></li>
-                    <li><a href="add-film.html">Add Film</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
+            
         
     </header>
 
 <main>
+    
     <section class="login">
         <h2>Login</h2>
         <form action="#">
@@ -30,30 +32,6 @@
             <input type="password" id="password" name="password" required>
             <button type="submit">Login</button>
         </form>
-    </section>
-
-    <section class="film-management">
-        <h2>Film Management</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Genre</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Film Title 1</td>
-                    <td>Action</td>
-                    <td>
-                        <a href="add-film.html" class="edit-btn">Edit</a>
-                        <button class="delete-btn">Delete</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <a href="add-film.html" class="add-film-btn">Add New Film</a>
     </section>
 </main>
 

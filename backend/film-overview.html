@@ -9,18 +9,17 @@
 </head>
 <body>
     <header>
+        <h1>Film Management</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="film-overview.html">Film Overview</a></li>
-                <li><a href="add-film.html">Add Film</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
-    
-    
 <section id="film-overview">
+    <div class="container">
     <h2>All Films</h2>
     <table>
         <thead>
@@ -35,14 +34,16 @@
                 <td>Titanic</td>
                 <td>Romance, Drama</td>
                 <td>
-                    <a href="film-detail.html?film=1" class="edit-btn">View</a>
+                    <a href="#" class="edit-btn">Edit</a>
+                    <a href="#" class="delete-btn">Delete</a>
                 </td>
             </tr>
             <tr>
                 <td>The Notebook</td>
                 <td>Romance, Drama</td>
                 <td>
-                    <a href="film-detail.html?film=2" class="edit-btn">View</a>
+                    <a href="#" class="edit-btn">Edit</a>
+                    <a href="#" class="delete-btn">Delete</a>
                 </td>
             </tr>
 
@@ -50,7 +51,8 @@
                 <td>Harry Potter</td>
                 <td>Fantasy, Adventure</td>
                 <td>
-                    <a href="film-detail.html?film=3" class="edit-btn">View</a>
+                    <a href="#" class="edit-btn">Edit</a>
+                    <a href="#" class="delete-btn">Delete</a>
                 </td>
             </tr>
 
@@ -58,12 +60,21 @@
                 <td>The Lord of the Rings</td>
                 <td>Fantasy, Adventure</td>
                 <td>
-                    <a href="film-detail.html?film=4" class="edit-btn">View</a>
+                    <a href="#" class="edit-btn">Edit</a>
+                    <a href="#" class="delete-btn">Delete</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <a href="add-film.html" class="add-film-btn">Add New Film</a>
                 </td>
             </tr>
         </tbody>
     </table>
+    </div>
 </section>
+<footer>
+    <p>&copy; 2025 Film Website. All rights reserved.</p>
+</footer>
 
-</body>
-</html>

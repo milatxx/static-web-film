@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+    margin: 0;
 }
 
 main {
@@ -28,17 +29,21 @@ header {
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 1rem 0 0 0;
     padding: 0;
     gap: 1rem;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 
@@ -46,7 +51,6 @@ header nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -80,22 +84,24 @@ header nav ul li a:hover {
 }
 
 .login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
+    width: 90%;
+    max-width: 20px;
+    padding: 8px;
+    margin-bottom: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size:0.9rem;
 }
 
 .login-form .btn {
-    width: 100%;
+    width: 90%;
+    max-width: 300px;
     padding: 10px;
     background: #007BFF;
     color: #fff;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
 }
 
@@ -103,77 +109,54 @@ header nav ul li a:hover {
     background: #0056b3;
 }
 
-
-.overview-container {
-    max-width: 800px;
-    margin: 50px auto;
-}
-
-.overview-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.film-table {
+table {
     width: 90%;
     border-collapse: collapse;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 2rem auto;
+    background-color: #f9f9f9;
 }
 
-.film-table th,
-.film-table td {
+table th, table td {
     padding: 1rem;
     text-align: left;
     border: 1px solid #ddd;
 }
 
-.film-table th {
+table th {
     background: #007BFF;
     color: #fff;
 }
 
-.film-table tr:nth-child(even) {
-    background: #f9f9f9;
-}
-
-.film-table .btn {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-    border: none;
+table td a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
-    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
 }
 
-.film-table .edit-btn {
-    background: #28a745;
-    color: #fff;
+table td a.edit-btn {
+    background-color: #28a745;
+    color: white;
 }
 
-.film-table .delete-btn {
-    background: #dc3545;
-    color: #fff;
+table td a.delete-btn {
+    background-color: #dc3545;
+    color: white;
 }
 
-
-.form-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+table td a:hover {
+    opacity: 0.9;
 }
 
-.film-form label {
+form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
-.film-form input,
-.film-form select,
-.film-form textarea {
+form input, form select, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 16px;
@@ -182,11 +165,11 @@ header nav ul li a:hover {
     font-size: 1rem;
 }
 
-.film-form textarea {
+form textarea {
     resize: none;
 }
 
-.film-form .btn {
+form .btn {
     width: 100%;
     padding: 10px;
     background: #007BFF;
@@ -197,7 +180,7 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 
-.film-form .btn:hover {
+form .btn:hover {
     background: #0056b3;
 }
 
@@ -206,8 +189,12 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem; 
+    margin-top: auto;
 }
 
+footer p {
+    margin: 0;
+}
 .btn {
     padding: 0.8rem 1rem;
     border: none;
@@ -223,3 +210,15 @@ footer {
     background-color: #4e007a;
 }
 
+.container {
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+}
+
+#film-overview h2 {
+    text-align: center; 
+    font-size: 1.8rem; 
+    margin-bottom: 20px;
+    color: #333; 
+}
